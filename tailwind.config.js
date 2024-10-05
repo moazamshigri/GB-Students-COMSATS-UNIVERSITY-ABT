@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./dist/index.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        "Source": ["Source Sans 3","sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
