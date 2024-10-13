@@ -8,23 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
    <div class="main bg-cover bg-center h-[100vh]" style="background-image: url('../src/main.jpg ');">
-    <header class=" flex bg-[rgba(9,59,106,0.8)]  " style="position: sticky; top: 0px;">
-        <nav>
-            <div class="logo p-1 flex items-center">
+    <header class=" flex flex-col items-center  " style="position: sticky; top: 0px;">
+        <nav class="flex  h-[87px] bg-[rgba(9,59,106,0.8)]  items-center text-white size-full justify-evenly">
+            <div class="logo p-1 flex text-center items-center
+             ">
                 <img class="h-[3.75rem]" src="../src/COMSATS.png" alt="logo">
                 <div class="ml-1.5">
-                    <h1 class="font-'Source'  h-[1.4rem] text-xl font-semibold text-white" style="font-family: 'Source Sans 3';">GB STUDENTS</h1>
+                    <h1 class="flex font-'Source'  h-[1.4rem] text-xl font-semibold text-white" style="font-family: 'Source Sans 3';">GB STUDENTS</h1>
                     <p class="text-white">COMSATS ABBOTTABAD</p>
                 </div>
             </div>
+            <button class=" button h-[25px] hover:text-gray-300 p-1 flex md:hidden "><i class="buttonclass fa fa-bars"></i></button>
+        </nav>
+        <nav class="mobile hidden md:hidden text-white  w-full  items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)] " style="position: sticky; top: 0px;" >
+
+            <ul>
+                <li><a class="hover:underline hover:text-gray-400" href="#">About Us</a></li>
+                <li><a class="hover:underline hover:text-gray-400" href="#">News</a></li>
+                <li><a class="hover:underline hover:text-gray-400" href="#">Alumni</a></li>
+                <li><a class="hover:underline hover:text-gray-400" href="#">Admissions</a></li>
+            </ul>
+          
         </nav>
     </header>
 
    
 
 </div>
+<script src="index.js"></script>
 </body>
 </html>
