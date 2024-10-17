@@ -8,11 +8,18 @@ button.addEventListener("click",()=>{
      if(temp%2 !=1){
 
          mobileNav.classList.replace("flex","hidden");
+
          buttonclass.classList.replace("fa-close","fa-bars");
-        }
+   
+     }
         else{
+          
             buttonclass.classList.replace("fa-bars","fa-close");
          mobileNav.classList.replace("hidden","flex");
+
+         mobileNav.classList.add("delay-400");
+         mobileNav.classList.add("animate-slideDown");
+        
 
      }
     
