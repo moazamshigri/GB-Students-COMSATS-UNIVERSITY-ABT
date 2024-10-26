@@ -3,8 +3,9 @@ module.exports = {
   content: ["./dist/*.html"],
   theme: {
     extend: {
-      fontFamily:{
-        "Source": ["Source Sans 3","sans-serif"],
+      fontFamily: {
+        "Source": ["Source Sans 3", "sans-serif"],
+    
       },
     },
   },
