@@ -753,10 +753,6 @@ video {
   align-items: center;
 }
 
-.justify-normal{
-  justify-content: normal;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -783,10 +779,6 @@ video {
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
@@ -1266,21 +1258,12 @@ video {
     max-width: 24rem;
   }
 
-<<<<<<< HEAD
-  .md\:gap-1{
-    gap: 0.25rem;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
-=======
   .md\:justify-between{
     justify-content: space-between;
   }
 
   .md\:gap-2{
     gap: 0.5rem;
->>>>>>> 71c99d49b36d2f75272ced6ddd3bc4cfee78d8ac
   }
 }
 
