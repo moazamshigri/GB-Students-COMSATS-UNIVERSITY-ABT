@@ -837,6 +837,10 @@ video {
   align-items: center;
 }
 
+.justify-normal{
+  justify-content: normal;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -863,6 +867,10 @@ video {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
@@ -1359,6 +1367,14 @@ video {
 
   .md\:max-w-sm{
     max-width: 24rem;
+  }
+
+  .md\:gap-1{
+    gap: 0.25rem;
+  }
+
+  .md\:gap-10{
+    gap: 2.5rem;
   }
 }
 
