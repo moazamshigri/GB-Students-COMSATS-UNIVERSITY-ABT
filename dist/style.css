@@ -665,6 +665,14 @@ video {
   margin-left: 1rem;
 }
 
+.ml-1{
+  margin-left: 0.25rem;
+}
+
+.ml-7{
+  margin-left: 1.75rem;
+}
+
 .block{
   display: block;
 }
@@ -746,6 +754,10 @@ video {
   height: 100vh;
 }
 
+.h-\[100vw\]{
+  height: 100vw;
+}
+
 .min-h-full{
   min-height: 100%;
 }
@@ -816,6 +828,10 @@ video {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -1533,6 +1549,10 @@ video {
 
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:ml-7{
+    margin-left: 1.75rem;
   }
 
   .md\:flex{
