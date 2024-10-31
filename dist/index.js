@@ -24,3 +24,22 @@ button.addEventListener("click", () => {
     }
 
 });
+
+
+// 
+
+const background = document.getElementById("background");
+const images = ["bg-image1", "bg-image2", "bg-image3"];
+let currentIndex = 0;
+
+function changeBackground() {
+
+    background.classList.remove(images[currentIndex]);
+
+    currentIndex = (currentIndex + 1) % images.length;
+
+    background.classList.add(images[currentIndex]);
+}
+
+
+setInterval(changeBackground, 4000);
