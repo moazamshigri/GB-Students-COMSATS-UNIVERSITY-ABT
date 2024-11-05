@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Balti STUDENTS CUIATD</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,7 +53,33 @@
       }
 
       .animate-slideUp {
-        animation: slideUp 5s ease-out forwards;
+        animation: slideUp 3s ease-out forwards;
+      }
+
+      .tanveer {
+        background-image: url("./images/main.jpg");
+      }
+
+      /* Default styles for the background */
+      .background {
+        width: 100%;
+        height: 100vh; /* Full screen height */
+        background-size: cover;
+        background-position: center;
+        transition: background-image 1s ease-in-out; /* Smooth transition */
+      }
+
+      /* You can define background images like this */
+      .bg-image1 {
+        background-image: url("/images/main.jpg");
+      }
+
+      .bg-image2 {
+        background-image: url("/images/dhamtour.png");
+      }
+
+      .bg-image3 {
+        background-image: url("/images/main1.jpg");
       }
     </style>
   </head>
@@ -61,10 +88,7 @@
     <!-- Moazam shigri -->
     <!-- Tanveer anjum -->
     <!-- apocho -->
-    <div
-      class="main bg-cover bg-center h-[100vh]"
-     
-    >
+    <div class="main bg-cover bg-center h-[100vh]">
       <header
         class="flex flex-col items-center"
         style="position: sticky; top: 0px"
@@ -73,7 +97,11 @@
           class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
         >
           <div class="logo p-1 flex text-center items-center">
-            <img class="h-[3.75rem]" src="../src/COMSATS.png" alt="logo" />
+            <img
+              class="h-[3.75rem]"
+              src="/images/COMSATS-logo-removebg-preview.png"
+              alt="logo"
+            />
             <div class="ml-1.5">
               <h1
                 class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
@@ -86,14 +114,12 @@
           </div>
           <ul class="md:flex hidden w-[44%] items-center justify-around">
             <li>
-              <a class="hover:underline hover:text-gray-400" href="./index.html"
-                >Home</a
-              >
+              <a class="hover:underline hover:text-gray-400" href="./index">Home</a>
             </li>
             <li>
               <a
                 class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./About.html"
+                href="./about"
                 >About Us</a
               >
             </li>
@@ -101,14 +127,14 @@
             <li>
               <a
                 class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./almuni.html"
+                href="./almuin"
                 >Alumni</a
               >
             </li>
             <li>
               <a
                 class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="credits.html"
+                href="/credits"
                 >Credits</a
               >
             </li>
@@ -121,16 +147,16 @@
         </nav>
         <nav
           class="mobile hidden md:hidden text-white w-full items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)]"
-          style="position: sticky; top: 0px"
+          style="position: sticky; top:0;"
         >
           <ul>
             <li>
-              <a class="hover:underline hover:text-gray-400" href="index.html"
+              <a class="hover:underline hover:text-gray-400" href="./index"
                 >Home</a
               >
             </li>
             <li>
-              <a class="hover:underline hover:text-gray-400" href="./About.html"
+              <a class="hover:underline hover:text-gray-400" href="./about"
                 >About Us</a
               >
             </li>
@@ -138,7 +164,7 @@
             <li>
               <a
                 class="hover:underline hover:text-gray-400"
-                href="./almuni.html"
+                href="./almuin"
                 >Alumni</a
               >
             </li>
@@ -152,55 +178,56 @@
       </header>
 
       <main class="">
-
+        <!-- javascript -->
         <div
-        id="background"
-        class="bg-image1 bg-cover h-screen w-full"
-      >
-        <div class="text-white text-center md:mt-0 py-2">
-          <h1 class="text-3xl">
+          id="background"
+          class="background bg-image1 bg-cover h-screen w-full  bg-no-repeat"
+        >
+          <div class="text-center md:mt-0 py-16 text-3xl text-white">
             WELLCOME TO BALTI COMSIANS STUDENTS ABBOTTABAD
-          </h1>
-          <h2></h2>
+
+            <h2></h2>
+          </div>
+
+          <section>
+            <div
+              class="text-white font-extralight text-center justify-center items-center text-xl"
+            >
+              "Success is not the key to happiness. Happiness is the key to
+              success. If you love what you are doing, you will be successful."
+              <br />
+              <span> Schweitzer </span>
+            </div>
+          </section>
         </div>
-
-        <section>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quod at!
-          Beatae, rem asperiores placeat et fugiat commodi culpa quis omnis
-          ipsum doloribus? Tenetur asperiores commodi quasi cupiditate
-          repellendus totam.
-        </section>
-      </div>
       </main>
-
     </div>
-   
-    
- 
+
     <section class="bg-sky-950">
       <!-- https://gist.github.com/goodreds/3579ddfffe439457b5ef9902b5336124 -->
       <section
         class="flex flex-col justify-center max-w-8xl min-h-screen px-4 py-5 mx-auto sm:px-2 md:gap-5 rounded-lg"
       >
-        <div class="flex flex-wrap items-center justify-between mb-8">
+        <div class="flex flex-wrap mb-8 justify-center">
           <h2
-            class="mr-10 text-4xl font-bold leading-none md:text-5xl text-white"
+            class="mr-10 text-4xl font-bold leading-none md:text-4xl text-white"
           >
             Our Representer
           </h2>
         </div>
 
-        <div class="flex flex-wrap mx-8 py-4">
+        <div class="flex flex-wrap mx-8 py-2">
           <div
-            class="w-full max-w-full mb-8 sm:w-[300px] px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg"
+            class="w-full max-w-full mb-4 sm:w-[300px] px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg"
           >
-            <div class="bg-[url('../src/main.jpg')] h-36 bg-cover">
+            <div class="h-36 bg-cover tanveer">
               <img
-                src="../src/Untitled design (1).png"
+                src="/images/Untitled design (1).png"
                 alt="Card img"
                 class="object-cover object-center w-28 h-28 rounded-full justify-center items-center mt-4 ml-3"
               />
             </div>
+
             <div class="flex flex-grow">
               <div
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
@@ -229,9 +256,9 @@
             class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-xl"
           >
             <!-- second -->
-            <div class="bg-[url('../src/main.jpg')] h-36 bg-cover">
+            <div class="tanveer h-36 bg-cover">
               <img
-                src="../src/tanveer.jpg"
+                src="/images/tanveer.jpg"
                 alt="Card img"
                 class="object-cover object-center rounded-full w-28 h-28 mt-4 ml-3"
               />
@@ -263,9 +290,9 @@
           <div
             class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-xl"
           >
-            <div class="bg-[url('../src/main.jpg')] h-36 bg-cover">
+            <div class="tanveer h-36 bg-cover">
               <img
-                src="../src/Untitled design (1).png"
+                src="/images/Untitled design (1).png"
                 alt="Card img"
                 class="object-cover object-center rounded-full w-28 h-28 mt-4 ml-3"
               />
@@ -298,6 +325,8 @@
       </section>
     </section>
 
+    <!-- footer -->
+
     <footer class="w-full bg-gray-900">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!--Grid-->
@@ -308,19 +337,13 @@
             class="md:flex text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500"
           >
             <li>
-              <a href="#" class="text-white hover:text-gray-400"
-                >Home</a
-              >
+              <a href="/index" class="text-white hover:text-gray-400">Home</a>
             </li>
             <li class="sm:my-0 my-2">
-              <a href="#" class="text-white hover:text-gray-400"
-                >About Us</a
-              >
+              <a href="/about" class="text-white hover:text-gray-400">About Us</a>
             </li>
             <li>
-              <a href="#" class="text-white hover:text-gray-400"
-                >Almuni</a
-              >
+              <a href="almuin" class="text-white hover:text-gray-400">Almuni</a>
             </li>
           </ul>
         </div>
@@ -328,14 +351,13 @@
         <div class="py-7 border-t border-gray-700">
           <div class="flex items-center justify-center">
             <span class="text-gray-400"
-              >©<a href="#"
-                >Balti Comsians Student Abbottabad</a
-              >2024, All rights reserved.</span
+              >©<a href="#">Balti Comsians Student Abbottabad</a>2024, All
+              rights reserved.</span
             >
           </div>
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

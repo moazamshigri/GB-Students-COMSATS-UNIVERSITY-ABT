@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <style>
       .custom-height {
@@ -15,8 +15,8 @@
 
   <body>
     <div
-      class="main bg-cover bg-center h-full"
-      style="background-image: url('../src/main.jpg ')"
+      class="main bg-cover bg-center h-screen w-full"
+      style="background-image: url('/images/main.jpg ')"
     >
       <header
         class="flex flex-col items-center"
@@ -26,7 +26,7 @@
           class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
         >
           <div class="logo p-1 flex text-center items-center">
-            <img class="h-[3.75rem]" src="../src/COMSATS.png" alt="logo" />
+            <img class="h-[3.75rem]" src="/images/COMSATS-logo-removebg-preview.png" alt="logo" />
             <div class="ml-1.5">
               <h1
                 class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
@@ -42,25 +42,21 @@
 
       <main>
         <div class=" mt-10 items-center justify-center text-center font-bold text-2xl font-serif">
-        <h1 class="text-white">
-          This website is only for Balti Comsians ABBOTTABAD
-
-        </h1>
-        <div class="mt-3">
-        <h2 class="text-white ">If you have no account please signup first</h2>
-      </div>
-      </div>
-
+          <h1 class="text-white">
+            This website is only for Balti Comsians ABBOTTABAD
+  
+          </h1>
+        </div>
         <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
           <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <h2
               class="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-white"
             >
-              Login here
+              Make your account here
             </h2>
           </div>
 
-          <div class="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
+          <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form class="space-y-6" action="#" method="POST">
               <div>
                 <label
@@ -95,7 +91,7 @@
                     >
                   </div>
                 </div>
-                <div class="mt-3">
+                <div class="mt-2">
                   <input
                     id="password"
                     name="password"
@@ -110,9 +106,9 @@
               <div>
                 <button
                   type="submit"
-                  class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 "
+                  class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  login
+                  SignUp
                 </button>
               </div>
             </form>
@@ -120,9 +116,9 @@
             <p class="mt-10 text-center text-sm text-gray-500">
               Not a member?
               <a
-                href="./register.html"
+                href="/"
                 class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-                >SignUp</a
+                >go back</a
               >
             </p>
           </div>
