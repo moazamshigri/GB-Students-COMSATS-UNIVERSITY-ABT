@@ -18,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
       @keyframes slideDown {
@@ -136,9 +137,7 @@
             </li>
 
             <li>
-              <a
-                class="hover:underline hover:text-gray-400"
-                href="./almuin"
+              <a class="hover:underline hover:text-gray-400" href="./almuin"
                 >Alumni</a
               >
             </li>
@@ -153,10 +152,7 @@
 
       <main
         class="h-screen w-full bg-no-repeat bg-cover"
-        style="
-          background-image: url('/images/main.jpg');
-
-        "
+        style="background-image: url('/images/main.jpg')"
       >
         <section class="text-gray-400 body-font">
           <div
@@ -164,7 +160,7 @@
             bis_skin_checked="1"
           >
             <div
-              class="md:ml-7 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+              class="md:ml-7 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-right"
               bis_skin_checked="1"
             >
               <h1
@@ -180,7 +176,7 @@
               </p>
             </div>
             <div
-              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="fade-left" data-aos-duration="800" 
               bis_skin_checked="1"
             >
               <img
@@ -192,9 +188,125 @@
             </div>
           </div>
         </section>
+        <!-- card are using here -->
+        <section>
+          <!-- source https://github.com/spacemadev/elevate-free-tailwind-business-template/ -->
+          <section id="our-team" class="bg-gray-300 py-16"    >
+            <div class="container mx-auto px-2">
+              <h2 class="text-3xl font-bold text-center mb-8 text-primary">
+                Meet Our Team
+              </h2>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" >
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-left">
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 1"
+                    class="w-full rounded-lg mb-4" 
+                  />
+                  <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                  <p class="text-gray-700">Role: Software Engineer</p>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left">
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 2"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+                  <p class="text-gray-700">Role: Graphic Designer</p>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left" >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 3"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Alex Johnson</h3>
+                  <p class="text-gray-700">Role: Marketing Manager</p>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left" >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 4"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Peter Johnson</h3>
+                  <p class="text-gray-700">Role: Seo specialist</p>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-right" >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 5"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Emily Brown</h3>
+                  <p class="text-gray-700">Role: UX Designer</p>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-right" >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 6"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Michael Davis</h3>
+                  <p class="text-gray-700">Role: Frontend Developer</p>
+                </div>
+
+                <!-- Team Member 7 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-right"  >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 7"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">Sarah Johnson</h3>
+                  <p class="text-gray-700">Role: Content Writer</p>
+                </div>
+
+                <!-- Team Member 8 -->
+                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-right"  >
+                  <img
+                    src="/images/gbabout.jpg"
+                    alt="Team Member 8"
+                    class="w-full rounded-lg mb-4"
+                  />
+                  <h3 class="text-xl font-semibold mb-2">David Wilson</h3>
+                  <p class="text-gray-700">Role: Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
       </main>
     </div>
 
     <script src="index.js"></script>
+    
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script>
+
+AOS.init({
+        offset: 120, // Offset from the original trigger point
+        duration: 1200, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Animation will happen only once
+        mirror: false, // Prevent animations from running again when scrolling back up
+    });
+
+</script>
+
 </html>

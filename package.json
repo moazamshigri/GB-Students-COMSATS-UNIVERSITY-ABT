@@ -5,12 +5,13 @@
   "scripts": {
     "start": "node app.js",
     "build:css": "tailwindcss -i ./public/css/tailwind.css -o ./public/css/style.css --watch",
-     "dev": "concurrently \"npm run start\" \"npm run build:css\""
+    "dev": "concurrently \"npm run start\" \"npm run build:css\""
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "aos": "^2.3.4",
     "body-parser": "^1.20.3",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
