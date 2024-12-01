@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <style>
+      .custom-height {
+        height: calc(100vh - 87px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="main bg-cover bg-center h-auto
+       w-full"
+      style="background-image: url('/images/main.jpg ')"
+    >
+      <header
+        class="items-center"
+        style="position: sticky; top: 0px"
+      >
+        <nav
+          class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
+        >
+          <div class="logo p-1 flex text-center items-center">
+            <img
+              class="h-[3.75rem]"
+              src="/images/COMSATS-logo-removebg-preview.png"
+              alt="logo"
+            />
+            <div class="ml-1.5">
+            
+              <h1
+                class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
+                style="font-family: 'Source Sans 3'"
+              >
+                Balti STUDENTS
+              </h1>
+              <p class="text-white">COMSATS ABBOTTABAD</p>
+             
+            </div>
+          
+          </div>
+       
+         
+          <ul class="list-none flex gap-x-11">
+            <li>
+              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/index">
+                Home
+              </a>
+            </li>
+            <li>
+              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/about">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/almuin">
+                Almuni
+              </a>
+            </li>
+            <li>
+              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/news">
+                News
+              </a>
+            </li>
+           
+              <!-- Only show logout if user is logged in -->
+                <form action="/logout" method="POST">
+                  <button type="submit" class="bg-red-600 text-white p-2 rounded-md  hover:bg-red-700">Logout</button>
+                </form>
+             
+              
+              
+        
+          </ul>
+          
+         
+         
+        </nav>
+     
+        
+      </header>
+           <div class="">
+           <div class="w-[420px] justify-center items-center text-center  mx-[470px] mt-4" >
+          
+
+          <!-- kjkjj -->
+          <% if (success_msg && success_msg.length > 0) { %>
+            <div class="bg-green-500 text-white p-4 rounded-md mb-4">
+                <%= success_msg %>
+            </div>
+        <% } %>
+        
+        <% if (error_msg && error_msg.length > 0) { %>
+            <div class="bg-red-500 text-white p-4 rounded-md mb-4">
+                <%= error_msg %>
+            </div>
+        <% } %>
+          
+          <form action="/user/" method="POST" enctype="multipart/form-data">
+            <div class="mb-10">
+              <div class="mt-9">
+                <label class="block mb-5 text-xl font-medium text-white dark:text-white" for="user_avatar">Upload file</label>
+                <input type="file" id="user_avatar" name="user_avatar" class="block w-full mb-4 text-lg text-blue-900 border border-gray-300 rounded cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 p-1">
+              </div>
+          
+              <label for="username" class="block mb-2 text-xl font-medium text-white">Name the Student :</label>
+              <input type="text" id="username" name="username" class="bg-green-50 text-black text-lg rounded w-full p-1 dark:bg-gray-700" placeholder="Name the Student">
+          
+              <label for="department" class="block mb-2 text-xl font-medium text-white">Department Name :</label>
+              <input type="text" id="department" name="department" class="bg-green-50 text-black text-lg rounded w-full p-1 dark:bg-gray-700" placeholder="Department">
+          
+              <label for="semister" class="block mb-2 text-xl font-medium text-white">Semester :</label>
+              <input type="text" id="semister" name="semester" class="bg-green-50 text-black text-lg rounded w-full p-1 dark:bg-gray-700" placeholder="Semester">
+          
+              <div class="pt-5 justify-end flex ">
+                <button type="submit" class="bg-indigo-600 text-white rounded-md px-3 py-1.5  hover:bg-blue-900">Save</button>
+              </div>
+            </div>
+          </form>
+          
+</div>
+
+
+
+</div>
+
+<!-- jsdfhakijds -->
+
+<div class="container mx-auto mt-32 bg-blue-800">
+  <h1 class="text-2xl font-bold text-center mb-4">Manage Users</h1>
+  <table class="table-auto w-full border-collapse border border-gray-200 bg-white">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="px-4 py-2">Photo</th>
+        <th class="border border-gray-300 px-4 py-2">Name</th>
+        <th class="border border-gray-300 px-4 py-2">Department</th>
+        <th class="border border-gray-300 px-4 py-2">Semester</th>
+        <th class="border border-gray-300 px-4 py-">Actions</th>
+      </tr>
+    </thead>
+    <% if (users.length === 0) { %>
+      <tr>
+          <td colspan="5" class="text-center">No users found</td>
+      </tr>
+  <% } else { %>
+      <% users.forEach((user) => { %>
+          <tr>
+              <td class="border border-gray-300 px-4 py-2">
+                  <img src="<%= user.photo %>" alt="Photo" class="h-16 w-24 object-cover rounded-md" />
+              </td>
+              <td class="border border-gray-300 px-4 py-2"><%= user.name %></td>
+              <td class="border border-gray-300 px-4 py-2"><%= user.department %></td>
+              <td class="border border-gray-300 px-4 py-2"><%= user.semester %></td>
+              <td class="border border-gray-300 px-4 py-2 bg-red-700  focus:bg-red-800">
+                <form action="/user/delete/<%= user._id %>" method="POST">
+                  <input type="hidden" name="_method" value="DELETE"> <!-- Simulate DELETE method -->
+                  <button type="submit" class="font-bold text-2xl h-14 w-16 text-white">Delete</button>
+              </form>
+              </td>
+          </tr>
+      <% }) %>
+  <% } %>
+  
+  </table>
+</div>
+
+  
+
+
+   
+    </body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
+    <script>
+  
+  AOS.init({
+          offset: 120, // Offset from the original trigger point
+          duration: 1200, // Animation duration in milliseconds
+          easing: 'ease-in-out', // Easing function for the animation
+          once: true, // Animation will happen only once
+          mirror: false, // Prevent animations from running again when scrolling back up
+      });
+</script>  

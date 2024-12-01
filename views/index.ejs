@@ -89,101 +89,15 @@
     <!-- Tanveer anjum -->
     <!-- apocho -->
     <div class="main bg-cover bg-center h-[100vh]">
-      <header
-        class="flex flex-col items-center"
-        style="position: sticky; top: 0px"
-      >
-        <nav
-          class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
-        >
-          <div class="logo p-1 flex text-center items-center">
-            <img
-              class="h-[3.75rem]"
-              src="/images/COMSATS-logo-removebg-preview.png"
-              alt="logo"
-            />
-            <div class="ml-1.5">
-              <h1
-                class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
-                style="font-family: 'Source Sans 3'"
-              >
-                Balti STUDENTS
-              </h1>
-              <p class="text-white">COMSATS ABBOTTABAD</p>
-            </div>
-          </div>
-          <ul class="md:flex hidden w-[44%] items-center justify-around">
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="./index"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./about"
-                >About Us</a
-              >
-            </li>
+      <%- include('./common/header') %>
 
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./almuin"
-                >Alumni</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="/credits"
-                >Credits</a
-              >
-            </li>
-          </ul>
-          <button
-            class="button h-[25px] hover:text-gray-300 p-1 flex md:hidden"
-          >
-            <i class="buttonclass fa fa-bars"></i>
-          </button>
-        </nav>
-        <nav
-          class="mobile hidden md:hidden text-white w-full items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)]"
-          style="position: sticky; top: 0"
-        >
-          <ul>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="./index"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="./about"
-                >About Us</a
-              >
-            </li>
-
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="./almuin"
-                >Alumni</a
-              >
-            </li>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="credits.html"
-                >Credits</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main class="">
+      <main>
         <!-- javascript -->
         <div
           id="background"
           class="background bg-image1 bg-cover h-screen w-full bg-no-repeat"
         >
-          <div class="text-center md:mt-0 py-16 text-3xl text-white">
+          <div class="text-center md:mt-0 md:py-16 text-3xl text-white">
             WELLCOME TO BALTI COMSIANS STUDENTS ABBOTTABAD
 
             <h2></h2>
@@ -191,7 +105,7 @@
 
           <section>
             <div
-              class="text-white font-extralight text-center justify-center items-center text-xl"
+              class="text-white font-extralight md:text-center md:justify-center items-center text-xl"
             >
               "Success is not the key to happiness. Happiness is the key to
               success. If you love what you are doing, you will be successful."
@@ -206,9 +120,9 @@
     <section class="bg-sky-950">
       <!-- https://gist.github.com/goodreds/3579ddfffe439457b5ef9902b5336124 -->
       <section
-        class="flex flex-col justify-center max-w-8xl min-h-screen px-4 py-5 mx-auto sm:px-2 md:gap-5 rounded-lg"
+        class="flex flex-col justify-center max-w-8xl min-h-screen px-4 py-5 mx-auto sm:px-2 md:gap-5 rounded-lg "
       >
-        <div class="flex flex-wrap mb-8 justify-center">
+        <div class="flex flex-wrap md:mb-8 justify-center">
           <h2
             class="mr-10 text-4xl font-bold leading-none md:text-4xl text-white"
           >
@@ -233,17 +147,13 @@
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
               >
                 <div>
-                  <a
-                    href="#"
-                    class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
-                    >presedent
-                  </a>
-                  <a
-                    href="#"
-                    class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
-                  >
+                  <h1  class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
+                     presedent
+                  </h1>
+                  <h1 class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                   
                     Muhammad Aqeel
-                  </a>
+                  </h1>
                   <p class="mb-4">
                     He is the presendent of Balti Comsians Students Abbottabad
                   </p>
@@ -268,17 +178,17 @@
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
               >
                 <div>
-                  <a
-                    href="#"
-                    class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
-                    >Charmane</a
+                  <h1  class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
+              
+                   
+                    >Charmane</h1
                   >
-                  <a
-                    href="#"
+                  <h1
+                   
                     class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
                   >
                     Shabber Hussain
-                  </a>
+                </h1>
                   <p class="mb-4">
                     He is the presendent of Balti Comsians Students Abbottabad
                   </p>
@@ -303,17 +213,17 @@
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
               >
                 <div>
-                  <a
-                    href="#"
+                  <h1
+                   
                     class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
-                    >voice presedent</a
+                    >voice presedent</h1
                   >
-                  <a
-                    href="#"
+                  <h1
+                   
                     class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
                   >
                     Hassain ali
-                  </a>
+                </h1>
                   <p class="mb-4">
                     He is the presendent of Balti Comsians Students Abbottabad
                   </p>
@@ -326,40 +236,8 @@
     </section>
 
     <!-- footer -->
+    <%- include('./common/footer') %>
 
-    <footer class="w-full bg-gray-900">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <!--Grid-->
-        <div
-          class="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row"
-        >
-          <ul
-            class="md:flex text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500"
-          >
-            <li>
-              <a href="/index" class="text-white hover:text-gray-400">Home</a>
-            </li>
-            <li class="sm:my-0 my-2">
-              <a href="/about" class="text-white hover:text-gray-400"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a href="almuin" class="text-white hover:text-gray-400">Almuni</a>
-            </li>
-          </ul>
-        </div>
-        <!--Grid-->
-        <div class="py-7 border-t border-gray-700">
-          <div class="flex items-center justify-center">
-            <span class="text-gray-400"
-              >©<a href="#">Balti Comsians Student Abbottabad</a>2024, All
-              rights reserved.</span
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

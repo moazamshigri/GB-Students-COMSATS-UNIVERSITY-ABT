@@ -60,7 +60,7 @@
     <!-- Tanveer anjum -->
     <!-- apocho -->
     <div>
-      <header
+      <!-- <header
         class="flex flex-col items-center"
         style="position: sticky; top: 0px"
       >
@@ -109,8 +109,8 @@
             <li>
               <a
                 class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="credits"
-                >Credits</a
+                href="./news"
+                >News</a
               >
             </li>
           </ul>
@@ -148,8 +148,8 @@
             </li>
           </ul>
         </nav>
-      </header>
-
+      </header> -->
+<%-include('./common/header')%>
       <main
         class="h-screen w-full bg-no-repeat bg-cover"
         style="background-image: url('/images/main.jpg')"
@@ -188,109 +188,41 @@
             </div>
           </div>
         </section>
-        <!-- card are using here -->
-        <section>
+      
           <!-- source https://github.com/spacemadev/elevate-free-tailwind-business-template/ -->
-          <section id="our-team" class="bg-gray-300 py-16"    >
+          <section id="our-team" class="bg-custom-blue py-16">
             <div class="container mx-auto px-2">
-              <h2 class="text-3xl font-bold text-center mb-8 text-primary">
+              <h2 class="text-3xl font-bold text-center mb-8 text-primary text-white">
                 Meet Our Team
               </h2>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" >
-                <!-- Team Member 1 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-left">
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 1"
-                    class="w-full rounded-lg mb-4" 
-                  />
-                  <h3 class="text-xl font-semibold mb-2">John Doe</h3>
-                  <p class="text-gray-700">Role: Software Engineer</p>
-                </div>
-
-                <!-- Team Member 2 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left">
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 2"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
-                  <p class="text-gray-700">Role: Graphic Designer</p>
-                </div>
-
-                <!-- Team Member 3 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left" >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 3"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Alex Johnson</h3>
-                  <p class="text-gray-700">Role: Marketing Manager</p>
-                </div>
-
-                <!-- Team Member 4 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-left" >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 4"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Peter Johnson</h3>
-                  <p class="text-gray-700">Role: Seo specialist</p>
-                </div>
-
-                <!-- Team Member 5 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-right" >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 5"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Emily Brown</h3>
-                  <p class="text-gray-700">Role: UX Designer</p>
-                </div>
-
-                <!-- Team Member 6 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-right" >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 6"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Michael Davis</h3>
-                  <p class="text-gray-700">Role: Frontend Developer</p>
-                </div>
-
-                <!-- Team Member 7 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center" data-aos="fade-right"  >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 7"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">Sarah Johnson</h3>
-                  <p class="text-gray-700">Role: Content Writer</p>
-                </div>
-
-                <!-- Team Member 8 -->
-                <div class="bg-white rounded-lg shadow-md p-6 my-6 text-center"  data-aos="fade-right"  >
-                  <img
-                    src="/images/gbabout.jpg"
-                    alt="Team Member 8"
-                    class="w-full rounded-lg mb-4"
-                  />
-                  <h3 class="text-xl font-semibold mb-2">David Wilson</h3>
-                  <p class="text-gray-700">Role: Project Manager</p>
-                </div>
+          
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-6 gap-2"  data-aos="fade-down">
+                <% users.forEach(user => { %>
+                  <div class="rounded-xl p-4 my-4 text-center w-auto shadow-2xl shadow-black bg-white  transition-all duration-300 transform hover:scale-105">
+                    <img
+                      src="<%= user.photo %>"
+                      alt="<%= user.name %>"
+                      class="w-24 h-24 mx-auto rounded-full mb-2 object-cover" >
+                  
+                    <div>
+                      <h3 class="text-lg font-semibold mb-1 text-black"><%= user.name %></h3> 
+                      <p class="selection:text-sm text-gray-800">Department: <%= user.department %></p> 
+                      <p class="text-gray-900 text-sm">Semester: <%= user.semester %></p> 
+                    </div>
+                  </div>
+                <% }) %>
               </div>
             </div>
           </section>
-        </section>
+          <%-include('./common/footer')%>
+          
       </main>
+     
     </div>
+    <section>
+   
+    </section>
+    
 
     <script src="index.js"></script>
     

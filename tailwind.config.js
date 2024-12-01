@@ -7,6 +7,9 @@ module.exports = {
         "Source": ["Source Sans 3", "sans-serif"],
 
       },
+      colors: {
+        'custom-blue': '#082f49', // Add your custom color here
+      },
     
     },
   },
