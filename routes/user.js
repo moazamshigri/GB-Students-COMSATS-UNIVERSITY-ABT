@@ -36,15 +36,17 @@ const upload = multer({
 router.post('/', upload.single('user_avatar'), async (req, res) => {
     const { username, department, semester } = req.body;
 
+
     if (!username || !department || !semester) {
         req.flash('error_msg', 'Please provide all required fields');
         return res.redirect('/user');
     }
-
+   
 
     const photo = req.file ? `/uploads/${req.file.filename}` : 'No photos';
 
     const newUser = new Users({ name: username, department, semester, photo });
+
 
     await newUser.save();
     req.flash('success_msg', 'User added successfully!');
@@ -64,15 +66,13 @@ router.use((err, req, res, next) => {
 });
 
 
-//for logout
-
 
 
 //flash message
 router.get('/', async (req, res) => {
     const users = await Users.find();
     const success_msg = req.flash('success_msg');
-    const error_msg = req.flash('error_msg');  // Add error messages too
+    const error_msg = req.flash('error_msg'); 
     res.render('user', { users, success_msg, error_msg });
 });
 
@@ -83,7 +83,7 @@ router.post('/delete/:id', async (req, res) => {
     try {
         await Users.findByIdAndDelete(req.params.id); // Deletes user by ID
         req.flash('success_msg', 'User deleted successfully!');
-        res.redirect('/user'); // Redirects back to the user management page
+        res.redirect('/user');
     } catch (err) {
         console.error(err);
         req.flash('error_msg', 'Error deleting user.');
@@ -94,3 +94,5 @@ router.post('/delete/:id', async (req, res) => {
 
 
 module.exports = router;
+
+

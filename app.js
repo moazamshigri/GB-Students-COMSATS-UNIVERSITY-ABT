@@ -12,6 +12,8 @@ const Users = require('./models/users');
 
 
 
+
+
 const methodOverride = require('method-override');
 
 connectDB();
@@ -64,6 +66,9 @@ app.get('/index', (req, res) => {
 
 
 
+
+
+
 //for about
 
 app.get('/about', async (req, res) => {
@@ -77,9 +82,12 @@ app.get('/about', async (req, res) => {
 });
 
 
+
+
+
+
 //for logout
 app.post('/logout', (req, res) => {
-    console.log('Logout route hit');
 
     // Set the flash message before destroying the session
     req.flash('success_msg', 'Logged out successfully.');
@@ -116,7 +124,7 @@ app.get('/', (req, res) => {
 });
 
     
-
+   
 
 
 

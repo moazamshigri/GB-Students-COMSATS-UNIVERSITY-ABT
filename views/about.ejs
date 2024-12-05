@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balti STUDENTS CUIATD</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <%-include('./common/head')%>
 
     <style>
       @keyframes slideDown {
@@ -52,107 +34,24 @@
       .animate-slideUp {
         animation: slideUp 5s ease-out forwards;
       }
+      .moa{
+  color: white;
+  text-decoration: none;
+
+}
+.moa:hover{
+  color: #d3d3d3;
+  cursor: pointer;
+  text-decoration: underline;
+}
     </style>
   </head>
 
   <body>
-    <!-- Moazam shigri -->
-    <!-- Tanveer anjum -->
-    <!-- apocho -->
-    <div>
-      <!-- <header
-        class="flex flex-col items-center"
-        style="position: sticky; top: 0px"
-      >
-        <nav
-          class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
-        >
-          <div class="logo p-1 flex text-center items-center">
-            <img
-              class="h-[3.75rem]"
-              src="/images/COMSATS-logo-removebg-preview.png"
-              alt="logo"
-            />
-            <div class="ml-1.5">
-              <h1
-                class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
-                style="font-family: 'Source Sans 3'"
-              >
-                Balti STUDENTS
-              </h1>
-              <p class="text-white">COMSATS ABBOTTABAD</p>
-            </div>
-          </div>
-          <ul class="md:flex hidden w-[44%] items-center justify-around">
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="/index"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./About"
-                >About Us</a
-              >
-            </li>
-
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./almuin"
-                >Alumni</a
-              >
-            </li>
-            <li>
-              <a
-                class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-                href="./news"
-                >News</a
-              >
-            </li>
-          </ul>
-          <button
-            class="button h-[25px] hover:text-gray-300 p-1 flex md:hidden"
-          >
-            <i class="buttonclass fa fa-bars"></i>
-          </button>
-        </nav>
-        <nav
-          class="mobile hidden md:hidden text-white w-full items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)]"
-          style="position: sticky; top: 0px"
-        >
-          <ul>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="/index"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="/About"
-                >About Us</a
-              >
-            </li>
-
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="./almuin"
-                >Alumni</a
-              >
-            </li>
-            <li>
-              <a class="hover:underline hover:text-gray-400" href="/credits"
-                >Credits</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header> -->
 <%-include('./common/header')%>
       <main
         class="h-screen w-full bg-no-repeat bg-cover"
-        style="background-image: url('/images/main.jpg')"
+        style="background-image: url('/images/main.jpg') "
       >
         <section class="text-gray-400 body-font">
           <div
@@ -169,19 +68,16 @@
                 About Us
               </h1>
               <p class="mb-8 leading-relaxed">
-                Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-                air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-                park mlkshk tote bag selvage hot chicken authentic tumeric
-                truffaut hexagon try-hard chambray.
+                Our primary goal is to foster collaboration and peer support among students. We aim to provide a platform where students can share knowledge, offer assistance, and navigate the university experience together. Whether it's academic advice, career guidance, or emotional support, our organization strives to make university life more manageable and enriching for every student.
               </p>
             </div>
             <div
-              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="fade-left" data-aos-duration="800" 
+              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 z-50" data-aos="fade-left" data-aos-duration="800" 
               bis_skin_checked="1"
             >
               <img
                 style="height: 331px"
-                class="object-cover object-center rounded"
+                class="object-cover object-center rounded "
                 alt="hero"
                 src="/images/gbabout.jpg"
               />
@@ -189,7 +85,9 @@
           </div>
         </section>
       
-          <!-- source https://github.com/spacemadev/elevate-free-tailwind-business-template/ -->
+      
+      
+           
           <section id="our-team" class="bg-custom-blue py-16">
             <div class="container mx-auto px-2">
               <h2 class="text-3xl font-bold text-center mb-8 text-primary text-white">
@@ -214,15 +112,16 @@
               </div>
             </div>
           </section>
+         
+      
+      
+         
           <%-include('./common/footer')%>
-          
-      </main>
-     
+              
     </div>
-    <section>
+      </main>
+  
    
-    </section>
-    
 
     <script src="index.js"></script>
     
@@ -241,4 +140,6 @@ AOS.init({
 
 </script>
 
-</html>
+</html> 
+
+

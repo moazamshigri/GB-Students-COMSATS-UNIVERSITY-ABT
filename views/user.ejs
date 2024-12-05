@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Balti STUDENTS CUIATD</title>
     <link rel="stylesheet" href="/css/style.css" />
 
     <style>
@@ -49,25 +49,31 @@
          
           <ul class="list-none flex gap-x-11">
             <li>
-              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/index">
+              <a class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/index">
                 Home
               </a>
             </li>
             <li>
-              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/about">
+              <a class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/about">
                 About Us
               </a>
             </li>
             <li>
-              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/almuin">
+              <a class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/almuin">
                 Almuni
               </a>
             </li>
             <li>
-              <a class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/news">
+              <a class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]" href="/news">
                 News
               </a>
             </li>
+
+
+
+
+
+
            
               <!-- Only show logout if user is logged in -->
                 <form action="/logout" method="POST">
@@ -76,7 +82,7 @@
              
               
               
-        
+       
           </ul>
           
          
@@ -85,12 +91,12 @@
      
         
       </header>
-           <div class="">
-           <div class="w-[420px] justify-center items-center text-center  mx-[470px] mt-4" >
+            <div class="">
+           <div class="w-[420px] justify-center items-center text-center  mx-[470px] mt-4" > 
           
 
-          <!-- kjkjj -->
-          <% if (success_msg && success_msg.length > 0) { %>
+      
+        <% if (success_msg && success_msg.length > 0) { %>
             <div class="bg-green-500 text-white p-4 rounded-md mb-4">
                 <%= success_msg %>
             </div>
@@ -100,9 +106,9 @@
             <div class="bg-red-500 text-white p-4 rounded-md mb-4">
                 <%= error_msg %>
             </div>
-        <% } %>
+        <% } %> 
           
-          <form action="/user/" method="POST" enctype="multipart/form-data">
+           <form action="/user/" method="POST" enctype="multipart/form-data">
             <div class="mb-10">
               <div class="mt-9">
                 <label class="block mb-5 text-xl font-medium text-white dark:text-white" for="user_avatar">Upload file</label>
@@ -122,16 +128,18 @@
                 <button type="submit" class="bg-indigo-600 text-white rounded-md px-3 py-1.5  hover:bg-blue-900">Save</button>
               </div>
             </div>
-          </form>
-          
+          </form> 
+         
+        
+        
 </div>
 
 
 
-</div>
 
-<!-- jsdfhakijds -->
+</div> 
 
+<!-- using admin -->
 <div class="container mx-auto mt-32 bg-blue-800">
   <h1 class="text-2xl font-bold text-center mb-4">Manage Users</h1>
   <table class="table-auto w-full border-collapse border border-gray-200 bg-white">
@@ -141,7 +149,9 @@
         <th class="border border-gray-300 px-4 py-2">Name</th>
         <th class="border border-gray-300 px-4 py-2">Department</th>
         <th class="border border-gray-300 px-4 py-2">Semester</th>
+       
         <th class="border border-gray-300 px-4 py-">Actions</th>
+      
       </tr>
     </thead>
     <% if (users.length === 0) { %>
@@ -156,11 +166,14 @@
               </td>
               <td class="border border-gray-300 px-4 py-2"><%= user.name %></td>
               <td class="border border-gray-300 px-4 py-2"><%= user.department %></td>
+              
               <td class="border border-gray-300 px-4 py-2"><%= user.semester %></td>
+             
+             
               <td class="border border-gray-300 px-4 py-2 bg-red-700  focus:bg-red-800">
                 <form action="/user/delete/<%= user._id %>" method="POST">
-                  <input type="hidden" name="_method" value="DELETE"> <!-- Simulate DELETE method -->
-                  <button type="submit" class="font-bold text-2xl h-14 w-16 text-white">Delete</button>
+                  <input type="hidden" name="_method" value="DELETE"> 
+                   <button type="submit" class="font-bold text-2xl h-14 w-16 text-white">Delete</button>
               </form>
               </td>
           </tr>
@@ -168,17 +181,18 @@
   <% } %>
   
   </table>
-</div>
-
-  
+</div> 
 
 
-   
+
     </body>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
     </script>
     <script>
+
+
+
   
   AOS.init({
           offset: 120, // Offset from the original trigger point
@@ -188,3 +202,19 @@
           mirror: false, // Prevent animations from running again when scrolling back up
       });
 </script>  
+
+<script>
+  const userTypeField = document.getElementById('userType');
+  const aboutFields = document.getElementById('aboutFields');
+  const indexFields = document.getElementById('indexFields');
+
+  userTypeField.addEventListener('change', () => {
+      if (userTypeField.value === 'about') {
+          aboutFields.style.display = 'block';
+          indexFields.style.display = 'none';
+      } else {
+          aboutFields.style.display = 'none';
+          indexFields.style.display = 'block';
+      }
+  });
+</script>

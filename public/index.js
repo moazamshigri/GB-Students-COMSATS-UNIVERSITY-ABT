@@ -1,14 +1,3 @@
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
-
-// AOS.init({
-//     offset: 120, // Offset from the original trigger point
-//     duration: 800, // Animation duration in milliseconds
-//     easing: 'ease-in-out', // Easing function for the animation
-//     once: true, // Whether animation should happen only once
-//     mirror: false, // Whether elements should animate out when scrolling past them
-// });
 
 document.addEventListener('DOMContentLoaded', () => {
     let button = document.querySelector(".button");

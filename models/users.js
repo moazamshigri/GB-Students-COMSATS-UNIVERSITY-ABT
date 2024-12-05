@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-// const User = require('./models/users');
+
 
 // Define the User schema
 const UserSchema = new mongoose.Schema({
@@ -17,14 +17,16 @@ const UserSchema = new mongoose.Schema({
         required: true,
     },
     photo: {
-        type: String, // Store the file path or URL of the photo
+        type: String, 
         required: false,
     },
 }, {
-    timestamps: true, // Adds createdAt and updatedAt fields
+    timestamps: true, 
 });
 
-// Create the User model
+
 const Users = mongoose.model('User', UserSchema);
 
 module.exports = Users;
+
+

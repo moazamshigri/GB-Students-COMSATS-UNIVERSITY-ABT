@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balti STUDENTS CUIATD</title>
-    <link rel="stylesheet" href="/css/style.css" />
+<%-include('./common/head')%>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- new one -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- using boitrap -->
+    <style>
+      .carousel-inner {
+        max-height: 600px; /* Set the desired height for the carousel */
+        overflow: hidden; /* Prevent content overflow */
+      }
+    
+      .carousel-item img {
+        height: 100%; /* Ensure images fill the height */
+        width: auto; /* Maintain aspect ratio */
+        object-fit:contain; /* Crop images to fit within the defined size */
+      }
+      </style>
 
     <style>
       @keyframes slideDown {
@@ -49,7 +40,7 @@
       }
 
       .animate-slideDown {
-        animation: slideDown 2s ease-out forwards;
+        animation: slideDown 2s ease-out forwards ;
       }
 
       .animate-slideUp {
@@ -60,27 +51,21 @@
         background-image: url("./images/main.jpg");
       }
 
-      /* Default styles for the background */
-      .background {
-        width: 100%;
-        height: 100vh; /* Full screen height */
-        background-size: cover;
-        background-position: center;
-        transition: background-image 1s ease-in-out; /* Smooth transition */
-      }
+   
 
-      /* You can define background images like this */
-      .bg-image1 {
-        background-image: url("/images/main.jpg");
-      }
+.moa{
+  color: white;
+  text-decoration: none;
 
-      .bg-image2 {
-        background-image: url("/images/dhamtour.png");
-      }
+}
+.moa:hover{
+  color: #d3d3d3;
+  cursor: pointer;
+  text-decoration: underline;
+}
 
-      .bg-image3 {
-        background-image: url("/images/main1.jpg");
-      }
+
+
     </style>
   </head>
 
@@ -88,21 +73,45 @@
     <!-- Moazam shigri -->
     <!-- Tanveer anjum -->
     <!-- apocho -->
-    <div class="main bg-cover bg-center h-[100vh]">
+    <div class="main bg-cover bg-center h-full bg-sky-950">
       <%- include('./common/header') %>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/pk.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/main.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/dhamtour.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-      <main>
-        <!-- javascript -->
-        <div
+       <!-- <div
           id="background"
-          class="background bg-image1 bg-cover h-screen w-full bg-no-repeat"
-        >
+          class="background bg-image1 h-screen w-full bg-no-repeat"
+        >  -->
+
+
+       
+<!-- bootrape -->
+
+       <!-- </div> -->
+      
+<!-- 
           <div class="text-center md:mt-0 md:py-16 text-3xl text-white">
             WELLCOME TO BALTI COMSIANS STUDENTS ABBOTTABAD
-
-            <h2></h2>
           </div>
-
           <section>
             <div
               class="text-white font-extralight md:text-center md:justify-center items-center text-xl"
@@ -112,15 +121,17 @@
               <br />
               <span> Schweitzer </span>
             </div>
+      
           </section>
-        </div>
-      </main>
-    </div>
+        </div> -->
+   
+
+      
+   
 
     <section class="bg-sky-950">
-      <!-- https://gist.github.com/goodreds/3579ddfffe439457b5ef9902b5336124 -->
       <section
-        class="flex flex-col justify-center max-w-8xl min-h-screen px-4 py-5 mx-auto sm:px-2 md:gap-5 rounded-lg "
+        class="flex flex-col justify-center max-w-8xl min-h-screen px-4 py-5 mx-auto sm:px-2 md:gap-5 rounded-lg"
       >
         <div class="flex flex-wrap md:mb-8 justify-center">
           <h2
@@ -130,7 +141,7 @@
           </h2>
         </div>
 
-        <div class="flex flex-wrap mx-8 py-2">
+       <div class="flex flex-wrap mx-8 py-2">
           <div
             class="w-full max-w-full mb-4 sm:w-[300px] px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-lg"
           >
@@ -164,8 +175,8 @@
 
           <div
             class="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col transition-transform transform hover:scale-105 hover:shadow-lg rounded-xl"
-          >
-            <!-- second -->
+          > 
+          
             <div class="tanveer h-36 bg-cover">
               <img
                 src="/images/tanveer.jpg"
@@ -231,13 +242,16 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </section>
     </section>
 
     <!-- footer -->
     <%- include('./common/footer') %>
 
+  
     <script src="./index.js"></script>
+ 
   </body>
+
 </html>

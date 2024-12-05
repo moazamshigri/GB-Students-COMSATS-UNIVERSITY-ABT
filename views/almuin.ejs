@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Balti STUDENTS CUIATD</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
+
+    <%-include('./common/head')%>
+<!-- new style for text -->
+
+<style>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+</style>
     <style>
       @keyframes slideDown {
         0% {
@@ -52,109 +52,215 @@
         animation: slideUp 5s ease-out forwards;
       }
       .back {
-        background-image: url("");
+        background-image: url("./images/main.jpg");
+      
       }
+      .moa{
+  color: white;
+  text-decoration: none;
+
+}
+.moa:hover{
+  color: #d3d3d3;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
     </style>
   </head>
 
-  <body class="back">
+  <body>
     <!-- Moazam shigri -->
     <!-- Tanveer anjum -->
     <!-- apocho -->
-<section class="bg-[url('/images/main.jpg')] h-screen w-full bg-cover bg-no-repeat">
-    <!-- <header
-      class="flex flex-col items-center"
-      style="position: sticky; top: 0px"
-    >
-      <nav
-        class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
-      >
-        <div class="logo p-1 flex text-center items-center">
-          <img
-            class="h-[3.75rem]"
-            src="/images/COMSATS-logo-removebg-preview.png"
-            alt="logo"
-          />
-          <div class="ml-1.5">
-            <h1
-              class="flex font-'Source' h-[1.4rem] text-xl font-semibold text-white"
-              style="font-family: 'Source Sans 3'"
-            >
-              Balti STUDENTS
-            </h1>
-            <p class="text-white">COMSATS ABBOTTABAD</p>
-          </div>
+    <section
+    class="back bg-cover bg-center h-full ">
+      <%-include('./common/header')%>
+
+      <style>
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 2;
+            transform: translateY(0px);
+          }
+        }
+      
+        .fade-in {
+          animation: fadeIn 3s ease-in-out;
+        }
+      </style>
+      
+      <section class="flex border w-full md:w-[1000px] m-12 items-center justify-center text-center mx-auto">
+        <div class="flex justify-center items-center">
+          <h2 class="text-2xl text-white fade-in px-4 md:px-0">
+            These graduates from COMSATS University Abbottabad have not only excelled academically but have also embarked on remarkable journeys, carving out successful careers in diverse fields. From technology and healthcare to business and creative industries, their contributions are making a significant impact both locally and globally.
+          </h2>
         </div>
-        <ul class="md:flex hidden w-[44%] items-center justify-around">
-          <li>
-            <a
-              class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-              href="./index"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-              href="./About"
-              >About Us</a
-            >
-          </li>
-
-          <li>
-            <a
-              class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-              href="./almuin"
-              >Alumni</a
-            >
-          </li>
-          <li>
-            <a
-              class="hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
-              href="./news"
-              >News</a
-            >
-          </li>
+      </section>
+      
+      <div class="text-white text-sm mt-6 mx-4 md:mx-20">
+        <h4>
+          Today, the X Comsians Abbottabad are shining examples of versatility and dedication. They are serving in various sectors, contributing to the growth and development of society:
+        </h4>
+        <ul class="list-disc pl-7 mt-4 text-lg">
+          <li><strong>In Technology:</strong> Many have become software engineers, IT specialists, and tech entrepreneurs, driving innovation and shaping the future of the digital landscape.</li>
+          <li><strong>In Healthcare:</strong> Some have chosen the noble path of healthcare, working as doctors, researchers, and administrators, improving lives and advancing medical sciences.</li>
+          <li><strong>In Business and Management:</strong> Others have excelled as business leaders, consultants, and analysts, bringing strategic insights and innovation to their organizations.</li>
+          <li><strong>In Creative Industries:</strong> From writers and artists to media professionals, the creative X Comsians are inspiring the world with their talents and vision.</li>
         </ul>
-        <button class="button h-[25px] hover:text-gray-300 p-1 flex md:hidden">
-          <i class="buttonclass fa fa-bars"></i>
-        </button>
-      </nav>
-      <nav
-        class="mobile hidden md:hidden text-white w-full items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)]"
-        style="position: sticky; top: 0px"
-      >
-        <ul>
-          <li>
-            <a class="hover:underline hover:text-gray-400" href="/index"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a class="hover:underline hover:text-gray-400" href="./About"
-              >About Us</a
-            >
-          </li>
+      </div>
+      
 
-          <li>
-            <a class="hover:underline hover:text-gray-400" href="./almuin"
-              >Alumni</a
-            >
-          </li>
-          <li>
-            <a class="hover:underline hover:text-gray-400" href="./news"
-              >News</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header> -->
-  <%-include('./common/header')%>
-  </section>
-   <%-include('./common/footer')%>
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-5 mt-14" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Card 1 -->
+        <div class="p-4" data-aos="fade-up" data-aos-duration="1000">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-2">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
 
+        <!-- card 4 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
 
-  
+        <!-- card 5 -->
+        <div class="p-4">
+          <figure class="md:flex max-w-5xl bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+            <img
+              class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto object-cover"
+              src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium dark:text-slate-100">
+                  “Tailwind CSS is the only framework that I've seen scale
+                  on large teams. It’s easy to customize, adapts to any design,
+                  and the build size is tiny.”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium">
+                <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+                <div class="text-slate-700 dark:text-slate-400">
+                  Staff Engineer, Algolia
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        </div>
+      </main>
+      
+    </section>
+
+    
+    <%-include('./common/footer')%>
 
     <script src="index.js"></script>
   </body>
