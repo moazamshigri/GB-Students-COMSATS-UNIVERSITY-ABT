@@ -44,35 +44,56 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+</style>
+<style>
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+    </style>
     </style>
   </head>
 
   <body>
-<%-include('./common/header')%>
+    <div class="main bg-cover bg-center h-full bg-sky-950">
+
       <main
         class="h-screen w-full bg-no-repeat bg-cover"
         style="background-image: url('/images/main.jpg') "
       >
+      <%-include('./common/header')%>
         <section class="text-gray-400 body-font">
           <div
-            class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+            class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center"
             bis_skin_checked="1"
           >
             <div
-              class="md:ml-7 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center" data-aos="fade-right"
+              class="md:ml-7 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-6 md:mb-0 items-center text-center" data-aos="fade-right"
               bis_skin_checked="1"
             >
               <h1
-                class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+                class="title-font sm:text-4xl text-3xl mb-2 md:mb-4 font-medium text-white"
               >
                 About Us
               </h1>
-              <p class="mb-8 leading-relaxed">
+              <p class="mb-2 leading-relaxed text-white text-lg mt-5 font-bold fade-in">
                 Our primary goal is to foster collaboration and peer support among students. We aim to provide a platform where students can share knowledge, offer assistance, and navigate the university experience together. Whether it's academic advice, career guidance, or emotional support, our organization strives to make university life more manageable and enriching for every student.
               </p>
             </div>
             <div
-              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 z-50" data-aos="fade-left" data-aos-duration="800" 
+              class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 z-50 fade-in" data-aos-duration="800" 
               bis_skin_checked="1"
             >
               <img
@@ -85,16 +106,18 @@
           </div>
         </section>
       
-      
-      
+      </main>
+    </div>
            
-          <section id="our-team" class="bg-custom-blue py-16">
-            <div class="container mx-auto px-2">
+          <section id="our-team" class="bg-custom-blue ">
+            <div class="container mx-auto px-2  md:pt-12 pt-56">
+             
               <h2 class="text-3xl font-bold text-center mb-8 text-primary text-white">
                 Meet Our Team
               </h2>
+      
           
-              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-6 gap-2"  data-aos="fade-down">
+              <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2 py-7">
                 <% users.forEach(user => { %>
                   <div class="rounded-xl p-4 my-4 text-center w-auto shadow-2xl shadow-black bg-white  transition-all duration-300 transform hover:scale-105">
                     <img
@@ -118,7 +141,8 @@
          
           <%-include('./common/footer')%>
               
-    </div>
+    
+        </div>
       </main>
   
    
@@ -130,13 +154,6 @@
   </script>
   <script>
 
-AOS.init({
-        offset: 120, // Offset from the original trigger point
-        duration: 1200, // Animation duration in milliseconds
-        easing: 'ease-in-out', // Easing function for the animation
-        once: true, // Animation will happen only once
-        mirror: false, // Prevent animations from running again when scrolling back up
-    });
 
 </script>
 

@@ -1,4 +1,35 @@
-<header class="flex flex-col items-center" style=" top: 0px">
+<style>
+
+  /* Default Styles */
+.button {
+  display: flex; /* Show button by default */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hide the button on medium (md) and larger screens */
+@media (min-width: 768px) {
+  .button {
+    display: none; /* Hide button for medium and larger screens */
+  }
+}
+
+/* Mobile Navigation Styles */
+.mobile {
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Ensure it stacks vertically */
+}
+
+/* When the navigation is active, use flex */
+.mobile.flex {
+  display: flex;
+}
+
+</style>
+
+
+
+<header class="flex flex-col items-center" style="top: 0px">
   <nav
     class="flex h-[87px] bg-[rgba(9,59,106,0.8)] items-center text-white size-full justify-evenly"
   >
@@ -18,22 +49,21 @@
         <p class="text-white">COMSATS ABBOTTABAD</p>
       </div>
     </div>
-    <ul class="md:flex hidden w-[44%] items-center justify-around">
+    <ul class="hidden md:flex justify-between w-[50%] items-center "  style="margin: 6px; gap: 5rem;">
       <li>
         <a
-          class="moa hover:text-gray-400 hover:underline no-underline "
+          class="moa hover:text-gray-400 hover:underline no-underline" 
           href="./index"
           >Home</a
         >
       </li>
       <li>
         <a
-          class=" moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
+          class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
           href="./about"
           >About Us</a
         >
       </li>
-
       <li>
         <a
           class="moa hover:cursor-pointer hover:underline hover:text-slate-300 text-[15px]"
@@ -49,14 +79,11 @@
         >
       </li>
     </ul>
-    <button class="button h-[25px] hover:text-gray-300 p-1 flex md:hidden">
+    <button class="button h-[25px] hover:text-gray-300 p-3">
       <i class="buttonclass fa fa-bars"></i>
     </button>
   </nav>
-  <nav
-    class="mobile hidden md:hidden text-white w-full items-start justify-evenly pt-4 pb-4 bg-[rgba(37,69,98,0.8)]"
-    style="position: sticky; top: 0"
-  >
+  <nav class="mobile hidden text-white w-full items-start justify-evenly bg-sky-950">
     <ul>
       <li>
         <a class="moa hover:underline hover:text-gray-400" href="./index"
@@ -68,7 +95,6 @@
           >About Us</a
         >
       </li>
-
       <li>
         <a class="moa hover:underline hover:text-gray-400" href="./almuin"
           >Alumni</a
@@ -82,4 +108,3 @@
     </ul>
   </nav>
 </header>
-<!-- moazam -->

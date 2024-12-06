@@ -10,7 +10,7 @@
       .carousel-item img {
         height: 100%; /* Ensure images fill the height */
         width: auto; /* Maintain aspect ratio */
-        object-fit:contain; /* Crop images to fit within the defined size */
+        object-fit:cover; /* Crop images to fit within the defined size */
       }
       </style>
 
@@ -73,8 +73,9 @@
     <!-- Moazam shigri -->
     <!-- Tanveer anjum -->
     <!-- apocho -->
+    <%- include('./common/header') %>
     <div class="main bg-cover bg-center h-full bg-sky-950">
-      <%- include('./common/header') %>
+    
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">

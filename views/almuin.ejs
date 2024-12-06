@@ -71,49 +71,36 @@
 
   <body>
     <!-- Moazam shigri -->
-    <!-- Tanveer anjum -->
-    <!-- apocho -->
-    <section
-    class="back bg-cover bg-center h-full ">
-      <%-include('./common/header')%>
-
-      <style>
-        @keyframes fadeIn {
-          0% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          100% {
-            opacity: 2;
-            transform: translateY(0px);
-          }
-        }
+  <%-include('./common/header')%>
+ 
+                  <main
+                    class="
+                    h-full w-full bg-no-repeat bg-cover mt-0
+                    "
+                    style="background-image: url('/images/main.jpg') "
+                  >
+               
       
-        .fade-in {
-          animation: fadeIn 3s ease-in-out;
-        }
-      </style>
-      
-      <section class="flex border w-full md:w-[1000px] m-12 items-center justify-center text-center mx-auto">
+      <section class="flex  w-full md:w-[1000px] items-center justify-center py-4 text-center mx-auto">
         <div class="flex justify-center items-center">
-          <h2 class="text-2xl text-white fade-in px-4 md:px-0">
+          <h2 class="text-2xl text-white fade-in px-4 md:px-0 py-3">
             These graduates from COMSATS University Abbottabad have not only excelled academically but have also embarked on remarkable journeys, carving out successful careers in diverse fields. From technology and healthcare to business and creative industries, their contributions are making a significant impact both locally and globally.
           </h2>
         </div>
       </section>
-      
-      <div class="text-white text-sm mt-6 mx-4 md:mx-20">
+  
+      <div class="text-white text-sm py-24 mx-6 md:mx-20 ">
         <h4>
           Today, the X Comsians Abbottabad are shining examples of versatility and dedication. They are serving in various sectors, contributing to the growth and development of society:
         </h4>
-        <ul class="list-disc pl-7 mt-4 text-lg">
+        <ul class="list-disc pl-7 mt-4 text-lg text-white fade-in">
           <li><strong>In Technology:</strong> Many have become software engineers, IT specialists, and tech entrepreneurs, driving innovation and shaping the future of the digital landscape.</li>
           <li><strong>In Healthcare:</strong> Some have chosen the noble path of healthcare, working as doctors, researchers, and administrators, improving lives and advancing medical sciences.</li>
           <li><strong>In Business and Management:</strong> Others have excelled as business leaders, consultants, and analysts, bringing strategic insights and innovation to their organizations.</li>
           <li><strong>In Creative Industries:</strong> From writers and artists to media professionals, the creative X Comsians are inspiring the world with their talents and vision.</li>
         </ul>
       </div>
-      
+   
 
       <main class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mx-5 mt-14" data-aos="fade-up" data-aos-duration="1000">
         <!-- Card 1 -->
@@ -255,9 +242,11 @@
             </div>
           </figure>
         </div>
+     
       </main>
-      
-    </section>
+    </div>
+ 
+           
 
     
     <%-include('./common/footer')%>
