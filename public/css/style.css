@@ -564,10 +564,6 @@ video {
   z-index: 50;
 }
 
-.float-end{
-  float: inline-end;
-}
-
 .mx-6{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -601,10 +597,6 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -615,6 +607,10 @@ video {
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
 }
 
 .mb-8{
@@ -631,6 +627,10 @@ video {
 
 .mr-10{
   margin-right: 2.5rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .mt-10{
@@ -667,26 +667,6 @@ video {
 
 .mt-9{
   margin-top: 2.25rem;
-}
-
-.mt-0{
-  margin-top: 0px;
-}
-
-.mt-24{
-  margin-top: 6rem;
-}
-
-.mt-36{
-  margin-top: 9rem;
-}
-
-.mt-11{
-  margin-top: 2.75rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
 }
 
 .block{
@@ -961,11 +941,6 @@ video {
   background-color: rgba(9,59,106,0.8);
 }
 
-.bg-blue-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
-
 .bg-blue-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
@@ -1029,11 +1004,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-slate-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
 .bg-cover{
@@ -1133,6 +1103,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1143,19 +1118,9 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.py-32{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
 }
 
 .pl-7{
@@ -1166,36 +1131,12 @@ video {
   padding-top: 1.25rem;
 }
 
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pt-40{
-  padding-top: 10rem;
-}
-
-.pt-52{
-  padding-top: 13rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
-}
-
-.pt-32{
-  padding-top: 8rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
-}
-
-.pt-48{
-  padding-top: 12rem;
-}
-
 .pt-56{
   padding-top: 14rem;
+}
+
+.pt-6{
+  padding-top: 1.5rem;
 }
 
 .text-center{
@@ -1246,10 +1187,6 @@ video {
 
 .font-bold{
   font-weight: 700;
-}
-
-.font-extralight{
-  font-weight: 200;
 }
 
 .font-medium{
@@ -1437,24 +1374,24 @@ video {
   }
 }
 
-.selection\:text-sm *::-moz-selection{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.selection\:text-lg *::-moz-selection{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.selection\:text-sm *::selection{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.selection\:text-lg *::selection{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.selection\:text-sm::-moz-selection{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.selection\:text-lg::-moz-selection{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
-.selection\:text-sm::selection{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.selection\:text-lg::selection{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .placeholder\:text-gray-400::-moz-placeholder{
@@ -1619,24 +1556,16 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
   .md\:mb-8{
     margin-bottom: 2rem;
   }
 
   .md\:ml-7{
     margin-left: 1.75rem;
-  }
-
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
-  .md\:mt-12{
-    margin-top: 3rem;
-  }
-
-  .md\:mb-4{
-    margin-bottom: 1rem;
   }
 
   .md\:flex{
@@ -1659,10 +1588,6 @@ video {
     width: 1000px;
   }
 
-  .md\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1677,10 +1602,6 @@ video {
 
   .md\:items-start{
     align-items: flex-start;
-  }
-
-  .md\:justify-center{
-    justify-content: center;
   }
 
   .md\:gap-5{
@@ -1704,11 +1625,6 @@ video {
     padding-right: 0px;
   }
 
-  .md\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .md\:pr-16{
     padding-right: 4rem;
   }
@@ -1719,10 +1635,6 @@ video {
 
   .md\:text-left{
     text-align: left;
-  }
-
-  .md\:text-center{
-    text-align: center;
   }
 
   .md\:text-4xl{

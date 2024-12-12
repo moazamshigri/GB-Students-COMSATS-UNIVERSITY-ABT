@@ -5,16 +5,22 @@
       .carousel-inner {
         max-height: 600px; /* Set the desired height for the carousel */
         overflow: hidden; /* Prevent content overflow */
+        background-size: cover;
       }
     
       .carousel-item img {
-        height: 100%; /* Ensure images fill the height */
-        width: auto; /* Maintain aspect ratio */
-        object-fit:cover; /* Crop images to fit within the defined size */
+        height: auto; /* Ensure images fill the height */
+        width: 100%; /* Maintain aspect ratio */
+        object-fit:contain;
+         /* Crop images to fit within the defined size */
+
+      }
+      .make{
+        height: 200px;
       }
       </style>
 
-    <style>
+    <!-- <style>
       @keyframes slideDown {
         0% {
           height: 100%;
@@ -66,7 +72,7 @@
 
 
 
-    </style>
+    </style> -->
   </head>
 
   <body>
@@ -74,20 +80,33 @@
     <!-- Tanveer anjum -->
     <!-- apocho -->
     <%- include('./common/header') %>
-    <div class="main bg-cover bg-center h-full bg-sky-950">
+    <section>
+    <div class="main bg-sky-950">
     
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./images/pk.jpg" class="d-block w-100" alt="...">
+            <img src="./images/pk.jpg" class="d-block w-100 " alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="./images/main.jpg" class="d-block w-100" alt="...">
+            <img src="./images/p13.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./images/dhamtour.png" class="d-block w-100" alt="...">
+            <img src="./images/p15.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/p32.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/p7.jpg" class="d-block w-100 " alt="...">
+          </div>
+         
+          <div class="carousel-item">
+            <img src="./images/p91.jpg" class="d-block w-100 " alt="...">
           </div>
         </div>
+        
+      
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -97,35 +116,10 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
-       <!-- <div
-          id="background"
-          class="background bg-image1 h-screen w-full bg-no-repeat"
-        >  -->
+    </div>
 
 
-       
-<!-- bootrape -->
-
-       <!-- </div> -->
-      
-<!-- 
-          <div class="text-center md:mt-0 md:py-16 text-3xl text-white">
-            WELLCOME TO BALTI COMSIANS STUDENTS ABBOTTABAD
-          </div>
-          <section>
-            <div
-              class="text-white font-extralight md:text-center md:justify-center items-center text-xl"
-            >
-              "Success is not the key to happiness. Happiness is the key to
-              success. If you love what you are doing, you will be successful."
-              <br />
-              <span> Schweitzer </span>
-            </div>
-      
-          </section>
-        </div> -->
-   
+  </section>
 
       
    
@@ -148,9 +142,9 @@
           >
             <div class="h-36 bg-cover tanveer">
               <img
-                src="/images/Untitled design (1).png"
+                src="/images/aqeel.jpeg"
                 alt="Card img"
-                class="object-cover object-center w-28 h-28 rounded-lg justify-center items-center mt-4 ml-3"
+                class="object-cover object-center w-28 h-28 rounded-lg justify-center items-center mt-2 ml-3"
               />
             </div>
 
@@ -159,16 +153,19 @@
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
               >
                 <div>
-                  <h1  class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
-                     presedent
+                  <h1  class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600">
+                     president
                   </h1>
-                  <h1 class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600">
+                  <h1 class="block mb-2 text-xl font-black leading-tight hover:underline hover:text-blue-600">
                    
-                    Muhammad Aqeel
+                    Aqeel Iqbal
                   </h1>
-                  <p class="mb-4">
-                    He is the presendent of Balti Comsians Students Abbottabad
+                  <p class="mb-2">
+                    He is the president of Balti Comsians Students Abbottabad <br>
+                    <strong>Department:Pharmacy</strong><br>
+                    <strong>Semester:7th</strong>
                   </p>
+                
                 </div>
               </div>
             </div>
@@ -180,9 +177,9 @@
           
             <div class="tanveer h-36 bg-cover">
               <img
-                src="/images/tanveer.jpg"
+                src="/images/avator.jpg"
                 alt="Card img"
-                class="object-cover object-center rounded-lg w-28 h-28 mt-4 ml-3"
+                class="object-cover object-center rounded-lg w-28 h-28 mt-2 ml-3"
               />
             </div>
             <div class="flex flex-grow">
@@ -190,20 +187,22 @@
                 class="flex flex-col justify-between px-4 py-6 bg-white border border-gray-400 h-[200px]"
               >
                 <div>
-                  <h1  class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
+                  <h1  class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
               
                    
-                    >Charmane</h1
+                    >Charmain</h1
                   >
                   <h1
                    
-                    class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
+                    class="block mb-2 text-xl font-black leading-tight hover:underline hover:text-blue-600"
                   >
-                    Shabber Hussain
+                    Shabbir Hussain
                 </h1>
-                  <p class="mb-4">
-                    He is the presendent of Balti Comsians Students Abbottabad
-                  </p>
+                <p class="mb-2">
+                  He is the Charmain of Balti Comsians Students Abbottabad <br>
+                  <strong>Department:Pharmacy</strong><br>
+                  <strong>Semester:7th</strong>
+                </p>
                 </div>
               </div>
             </div>
@@ -214,9 +213,9 @@
           >
             <div class="tanveer h-36 bg-cover">
               <img
-                src="/images/Untitled design (1).png"
+                src="/images/avator.jpg"
                 alt="Card img"
-                class="object-cover object-center rounded-lg w-28 h-28 mt-4 ml-3"
+                class="object-cover object-center rounded-lg w-28 h-28 mt-2 ml-3"
               />
             </div>
             <div class="flex flex-grow">
@@ -227,18 +226,20 @@
                 <div>
                   <h1
                    
-                    class="inline-block mb-4 text-3xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
-                    >voice presedent</h1
+                    class="inline-block mb-2 text-2xl font-bold capitalize border-b-2 border-blue-600 hover:text-blue-600"
+                    >voice president</h1
                   >
                   <h1
                    
-                    class="block mb-4 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
+                    class="block mb-2 text-2xl font-black leading-tight hover:underline hover:text-blue-600"
                   >
-                    Hassain ali
+                    Hasnain Ibrahim
                 </h1>
-                  <p class="mb-4">
-                    He is the presendent of Balti Comsians Students Abbottabad
-                  </p>
+                <p class="mb-2">
+                  He is the Charmain of Balti Comsians Students Abbottabad <br>
+                  <strong>Department:Civil Engneering</strong><br>
+                  <strong>Semester:7th</strong>
+                </p>
                 </div>
               </div>
             </div>
